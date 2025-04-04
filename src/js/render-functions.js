@@ -34,12 +34,12 @@ export function clearGallery() {
   gallery.innerHTML = '';
 }
 
-const loader = document.querySelector('#loader');
+const loader = document.querySelector('.loader');
 
 export function showLoader() {
-  loader.classList.remove('hidden');
+  loader.classList.add('is-open');
 }
 
 export function hideLoader() {
-  loader.classList.add('hidden');
+  loader.classList.remove('is-open');
 }
