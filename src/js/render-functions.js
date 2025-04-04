@@ -37,9 +37,9 @@ export function clearGallery() {
 const loader = document.querySelector('.loader');
 
 export function showLoader() {
-  loader.classList.add('is-open');
+  loader.classList.remove('hidden');
 }
 
 export function hideLoader() {
-  loader.classList.remove('is-open');
+  loader.classList.add('hidden');
 }

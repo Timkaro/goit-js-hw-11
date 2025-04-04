@@ -8,6 +8,7 @@ import {
   hideLoader,
 } from './js/render-functions.js';
 
+hideLoader();
 const form = document.querySelector('.form');
 const input = form.querySelector('input');
 
