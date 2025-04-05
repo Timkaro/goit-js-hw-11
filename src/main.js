@@ -16,6 +16,8 @@ clearGallery();
 form.addEventListener('submit', async event => {
   event.preventDefault();
 
+  clearGallery();
+
   const query = input.value.trim();
   if (!query) return;
 
@@ -23,8 +25,6 @@ form.addEventListener('submit', async event => {
 
   try {
     const photos = await getImagesByQuery(query);
-
-    clearGallery();
 
     if (!photos.hits.length) {
       iziToast.show({
